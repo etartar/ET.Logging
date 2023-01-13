@@ -7,14 +7,10 @@ namespace ET.Logging.Serilog.Logger
 {
     public class FileLogger : LoggerServiceBase
     {
-        private IConfiguration _configuration;
-
         public FileLogger(IConfiguration configuration)
         {
-            _configuration = configuration;
-
-            FileLogConfiguration logConfig = _configuration.GetSection("SeriLogConfigurations:FileLogConfiguration")
-                                                          .Get<FileLogConfiguration>() ?? throw new Exception(SerilogMessages.NullOptionsMessage);
+            var logConfig = configuration.GetSection("SeriLogConfigurations:FileLogConfiguration")
+                .Get<FileLogConfiguration>() ?? throw new Exception(SerilogMessages.NullOptionsMessage);
 
             string logFilePath = string.Format("{0}{1}", Directory.GetCurrentDirectory() + logConfig.FolderPath, ".txt");
 
