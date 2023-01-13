@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ET.Logging.Serilog\ET.Logging.Serilog.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.8.0" />
+	</ItemGroup>
+
+</Project>
