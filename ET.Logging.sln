@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ET.Logging", "ET.Logging\ET
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ET.Logging.Log4Net", "ET.Logging.Log4Net\ET.Logging.Log4Net.csproj", "{614F6343-D936-4BDD-B864-7BD02F6D0A1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ET.Logging.Serilog", "ET.Logging.Serilog\ET.Logging.Serilog.csproj", "{6C6FC85E-7646-4B16-9082-B16DA27EEB75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ET.Logging.Serilog", "ET.Logging.Serilog\ET.Logging.Serilog.csproj", "{6C6FC85E-7646-4B16-9082-B16DA27EEB75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
